@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Xypo</title>
+</head>
+<body>
+  <section class="background">
+    <header class="header">
+      <img src="/images/logo.png" alt="logomarca" class="logo">
+    </header>
+    <div class="content">
+      <section class="informative-text">
+        <h1>The purpose is to <br> teach, bring learning to people</h1>
+        <span class="square"></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti ad optio aspernatur explicabo in exercitationem quae voluptates voluptatem tempora quos nemo nostrum, corrupti autem modi recusandae veniam voluptatum laudantium.
+        </p>
+        <button class="btn">Read More</button>
+        <div class="lines">
+          <span class="line line-1"></span><br>
+          <span class="line line-2"></span><br>
+          <span class="line line-3"></span>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <nav id="sidenav">
+    <ul class="menu">
+      <li class="menu-item"><a href="#">HOME</a></li>
+      <li class="menu-item"><a href="#">ABOUT US</a></li>
+      <li class="menu-item"><a href="#">FEATURES</a></li>
+      <li class="menu-item"><a href="#">COURSES</a></li>
+      <li class="menu-item"><a href="#">OFFER</a></li>
+      <li class="menu-item"><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <img src="images/menu.png" alt="menu icon" id="menu-btn">
+
+  <section id="about">
+    <div class="about-item">
+      <img src="images/about.png">
+    </div>
+
+    <div class="about-item-2">
+    <div class="about-text">
+      <h1>About Us</h1>
+      <span class="square"></span>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eos similique, repellendus quae, id maiores eius nam, saepe odio facilis commodi. Dolorem sapiente facilis cupiditate recusandae nobis non, vero et sint itaque inventore quia, nihil minima assumenda eveniet delectus hic tempore? Soluta voluptas vel, ad nulla ab accusantium officiis eveniet dolores corrupti aspernatur doloribus ut commodi, rerum porro explicabo quod aliquam distinctio numquam. Distinctio molestias soluta perspiciatis ullam deleniti sunt!
+      </p>
+      <br><br>
+      <div class="lines">
+        <span class="line line-1"></span><br>
+        <span class="line line-2"></span><br>
+        <span class="line line-3"></span>
+      </div>
+
+       <h2>
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit est? Perferendis minima repellat possimus. "
+       </h2>
+       <h3>-----Lorem Ipsum</h3>
+     </div>
+    </div>
+  </section>
+
+  <script>
+    var menuBtn = document.getElementById('menu-btn');
+    var sidenav = document.getElementById('sidenav');
+
+    menuBtn.onclick = function() {
+      if(sidenav.style.right == "-250px") {
+        sidenav.style.right = "0px";
+      } else {
+        sidenav.style.right = "-250px"
+      }
+    }
+  </script>
+
+</body>
+</html>
