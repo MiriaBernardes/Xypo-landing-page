@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <title>Xypo</title>
 </head>
 <body>
   <section class="background">
-    <header class="header">
+    <header class="header" id="header">
       <img src="/images/logo.png" alt="logomarca" class="logo">
     </header>
     <div class="content">
@@ -30,12 +31,12 @@
 
   <nav id="sidenav">
     <ul class="menu">
-      <li class="menu-item"><a href="#">HOME</a></li>
-      <li class="menu-item"><a href="#">ABOUT US</a></li>
-      <li class="menu-item"><a href="#">FEATURES</a></li>
-      <li class="menu-item"><a href="#">COURSES</a></li>
-      <li class="menu-item"><a href="#">OFFER</a></li>
-      <li class="menu-item"><a href="#">CONTACT</a></li>
+      <li class="menu-item"><a href="#header">HOME</a></li>
+      <li class="menu-item"><a href="#about">ABOUT US</a></li>
+      <li class="menu-item"><a href="#features">FEATURES</a></li>
+      <li class="menu-item"><a href="#courses">COURSES</a></li>
+      <li class="menu-item"><a href="#offer">OFFER</a></li>
+      <li class="menu-item"><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 
@@ -231,8 +232,12 @@
   </footer>
 
 
-
-
+  <div class="social-icons">
+    <img src="images/facebook.png" alt="">
+    <img src="images/instagram.png" alt="">
+    <img src="images/twitter.png" alt="">
+    <img src="images/linkedin.png" alt="">
+  </div>
 
   <script>
     var menuBtn = document.getElementById('menu-btn');
@@ -245,6 +250,11 @@
         sidenav.style.right = "-250px"
       }
     }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true
+    });
   </script>
 
 </body>

@@ -6,7 +6,7 @@
 
 .background {
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url('images/background.png');
   background-position: center;
   background-size: cover;
 }
@@ -352,4 +352,102 @@ form input {
 
 .copyright-text, .footer-logo {
   flex-basis: 40%;
+}
+
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.social-icons img {
+  display: block;
+  width: 20px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width:770px) {
+  .background {
+    background-image: none;
+  }
+
+  .logo {
+    margin-top: 27px;
+    width: 70px;
+  }
+  
+  .content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .informative-text {
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 25px;
+  }
+
+  #menu-btn {
+    width: 40px;
+    right: 50px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+  }
+
+  .social-icons img {
+    width: 14px;
+    margin: 15px auto;
+  }
+
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-text {
+    margin-right: 50px 50px 0;
+    display: inline-block;
+  }
+
+  .about-text h2 {
+    font-size: 18px;
+  }
+
+  .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .course-col-1 {
+    flex-basis: 100%;
+  }
+
+  .course-col-2 {
+    flex-basis: 100%;
+    margin-top: 70px;
+  }
+
+  .contact-col-1, .contact-col-2 {
+    flex-basis: 100%;
+  }
+
+  .contact-col-2 {
+    margin-top: 50px;
+  }
+
+  .footer-col-1, .footer-col-2 {
+    flex-basis: 100%;
+  }
+
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
 }
